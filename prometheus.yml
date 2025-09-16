@@ -5,3 +5,7 @@ scrape_configs:
   - job_name: 'prom-learning-app'
     static_configs:
       - targets: ['host.docker.internal:4000'] # use localhost on linux if needed
+
+  - job_name: 'node'
+    static_configs:
+      - targets: ['host.docker.internal:9100'] # or localhost:9100 on Linux
